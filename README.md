@@ -7,6 +7,6 @@ ffmpeg -f gdigrab -framerate 2 -i desktop -vf "drawtext=fontfile=./FiraCode-Ligh
 
 https://trac.ffmpeg.org/wiki/Capture/Desktop
 
-only uses 0.1 cpu.
+only uses 1 - 4 cpu.
 
 plus c++ software that keeps track of windows titles, clipboard 
