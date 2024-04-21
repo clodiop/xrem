@@ -5,6 +5,9 @@ I have bad anxiety and other issues which affects my memory so when i want to re
 
 ffmpeg -f gdigrab -framerate 2 -i desktop -vf "drawtext=fontfile=c\\:/windows/fonts/arial.ttf: text='%{localtime}': x=10: y=10: fontsize=24: fontcolor=white: box=1: boxcolor=black@0.5" output.mkv -preset ultrafastg
 
+ffmpeg -f gdigrab -framerate 2 -i desktop -c:v libx265 -crf 30 -vf "drawtext=fontfile=c\:/windows/fonts/arial.ttf: text='%{localtime}': x=10: y=10: fontsize=24: fontcolor=white: box=1: boxcolor=black@0.5" output.mkv -preset ultrafast
+high cpu but low disk
+
 https://trac.ffmpeg.org/wiki/Capture/Desktop
 
 only uses 1 - 4 cpu.
