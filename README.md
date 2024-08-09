@@ -11,3 +11,7 @@ high cpu but low disk
 https://trac.ffmpeg.org/wiki/Capture/Desktop
 
 only uses 1 - 4 cpu.
+
+
+
+ffmpeg -framerate 3 -f x11grab -i :0.0 output.mp4 -preset ultrafast
